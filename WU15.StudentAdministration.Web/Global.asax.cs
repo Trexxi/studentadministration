@@ -53,8 +53,7 @@ namespace WU15.StudentAdministration.Web
             var course = new Course()
             {
                 Id = 1,
-                Students = Students,
-                SchoolNo = "c08bdab7-ed3d-4048-8338-d4f14f2770a8",
+                
                 Credits = "15",
                 Name = "Pedagogik 1",
                 Term = "VT",
@@ -65,8 +64,6 @@ namespace WU15.StudentAdministration.Web
             course = new Course()
             {
                 Id = 2,
-                //Students = Students,
-                SchoolNo = "c08bdab7-ed3d-4048-8338-d4f14f2770a8",
                 Credits = "10",
                 Name = "Pedagogik 2",
                 Term = "VT",
@@ -77,8 +74,6 @@ namespace WU15.StudentAdministration.Web
             course = new Course()
             {
                 Id = 3,
-                //Students = Students,
-                SchoolNo = "c08bdab7-ed3d-4048-8338-d4f14f2770a8",
                 Credits = "5",
                 Name = "Datalogi 1",
                 Term = "VT",
@@ -89,8 +84,6 @@ namespace WU15.StudentAdministration.Web
             course = new Course()
             {
                 Id = 4,
-                //Students = Students,
-                SchoolNo = "c08bdab7-ed3d-4048-8338-d4f14f2770a8",
                 Credits = "7,5",
                 Name = "Filosofi 1",
                 Term = "VT",
@@ -99,29 +92,15 @@ namespace WU15.StudentAdministration.Web
             Courses.Add(course);
         }
 
-        private static IEnumerable<Student> GetRandomStudentList()
-        {
-            var list = new List<Student>();
-            var random = new Random();
-
-            var index = random.Next(0, 4);
-            for (var i = 0; i < index; i++)
-            {
-                var subIndex = random.Next(0, 4);
-                list.Add(Students.ElementAt(subIndex));
-
-            }
-
-            return Students;
-        }
-
         private static void LoadStudents()
         {
             var student = new Student
             {
                 Id = 1,
                 FirstName = "Kalle",
-                LastName = "Bengtsson"
+                LastName = "Bengtsson",
+                SSN = "790101-2345"
+                
             };
             Students.Add(student);
 
@@ -129,7 +108,8 @@ namespace WU15.StudentAdministration.Web
             {
                 Id = 2,
                 FirstName = "Eva",
-                LastName = "Andersson"
+                LastName = "Andersson",
+                SSN = "790101-2345"
             };
             Students.Add(student);
 
@@ -137,7 +117,8 @@ namespace WU15.StudentAdministration.Web
             {
                 Id = 3,
                 FirstName = "Ylva",
-                LastName = "Nordsson"
+                LastName = "Nordsson",
+                SSN = "790101-2345"
             };
             Students.Add(student);
 
@@ -145,7 +126,8 @@ namespace WU15.StudentAdministration.Web
             {
                 Id = 4,
                 FirstName = "Evy",
-                LastName = "Carlsson"
+                LastName = "Carlsson",
+                SSN = "790101-2345"
             };
             Students.Add(student);
 
@@ -153,7 +135,8 @@ namespace WU15.StudentAdministration.Web
             {
                 Id = 5,
                 FirstName = "Lisa",
-                LastName = "Olofsson"
+                LastName = "Olofsson",
+                SSN = "790101-2345"
             };
             Students.Add(student);
 
@@ -161,7 +144,8 @@ namespace WU15.StudentAdministration.Web
             {
                 Id = 6,
                 FirstName = "Robert",
-                LastName = "Tovek"
+                LastName = "Tovek",
+                SSN = "790101-2345"
             };
             Students.Add(student);
         }
