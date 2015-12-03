@@ -21,9 +21,6 @@ namespace WU15.StudentAdministration.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static List<Course> Courses = null;
-        public static List<Student> Students = null;
-
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

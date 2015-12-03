@@ -75,8 +75,6 @@ namespace WU15.StudentAdministration.Web.API
         [AcceptVerbs("DELETE")]
         public void Delete(int id)
         {
-            var course = MvcApplication.Courses.FirstOrDefault(x => x.Id == id);
-            MvcApplication.Courses.Remove(course);
         }
     }
 }

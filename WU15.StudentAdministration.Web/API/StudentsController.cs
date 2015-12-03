@@ -42,8 +42,6 @@ namespace WU15.StudentAdministration.Web.API
         [HttpDelete]
         public void Delete(int id)
         {
-            var student = MvcApplication.Students.FirstOrDefault(x => x.Id == id);
-            MvcApplication.Students.Remove(student);
         }
     }
 }

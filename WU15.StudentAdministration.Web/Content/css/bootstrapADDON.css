@@ -2132,9 +2132,8 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-warning {
   color: #ffffff;
- background-color: #f0ad4e;
-  border-color: #eea236;
-
+ background-color:#e92929;
+ border-color:#d52828;
 }
 
 .btn-warning:hover,
@@ -2143,9 +2142,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning.active,
 .open .dropdown-toggle.btn-warning {
   color: #ffffff;
-  background-color: #ed9c28;
-  border-color: #d58512;
- 
+  background-color:#bf1b1b;
+  border-color:#b01414;
 }
 
 .btn-warning:active,
@@ -5301,9 +5299,8 @@ a.list-group-item:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
- background-color: #428bca;
-  border-color: #428bca;
-
+ background-color: #d11a1a;
+ border-color: #d11a1a;
 }
 
 .list-group-item.active .list-group-item-heading,
